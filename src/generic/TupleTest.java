@@ -19,7 +19,13 @@ public class TupleTest
 				new Vehicle(), new Amphibian(), "hi", 47);
 	}
 	
-//	static FiveTuple<V>
+	static FiveTuple<Vehicle, Amphibian, String, Integer, Double> k()
+	{
+		return new 
+			FiveTuple<Vehicle, Amphibian,String, Integer, Double>
+		  (new Vehicle(), new Amphibian(), "hi", 47, 11.1);
+	}
+	
 	
 	public static void main(String[] args)
 	{
@@ -28,7 +34,7 @@ public class TupleTest
 		
 		System.out.println(g());
 		System.out.println(h());
-//		System.out.println(k());
+		System.out.println(k());
 		
 	}
 
